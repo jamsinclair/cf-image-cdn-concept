@@ -1,0 +1,22 @@
+{
+  "name": "cf-image-cdn-concept",
+  "version": "1.0.0",
+  "main": "worker.js",
+  "scripts": {
+    "start": "rollup -cw & wrangler dev",
+    "publish": "rollup -c && wrangler publish"
+  },
+  "dependencies": {
+    "@jsquash/jpeg": "^1.1.4",
+    "@jsquash/png": "^2.0.0",
+    "@jsquash/resize": "^1.0.0",
+    "@jsquash/webp": "^1.1.2"
+  },
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.5",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "@rollup/plugin-replace": "^3.0.0",
+    "rollup": "^2.60.0"
+  },
+  "license": "MIT"
+}
